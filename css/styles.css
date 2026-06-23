@@ -1,0 +1,177 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+:root {
+  --white: #fdfcfd;
+  --red: #c22f04;
+  --blue: #ad03f6;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+}
+
+body {
+  background-color: var(--white);
+}
+
+a {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#name {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 800px;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  #name {
+    width: 90%;
+  }
+}
+
+#name h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: "Nanum Myeongjo", serif;
+  margin-top: 10px;
+}
+
+#name p,
+#name li,
+a {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 20px;
+}
+
+body {
+  margin: 0px;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+}
+
+#name p {
+  margin-top: var(--space-md);
+  margin-bottom: 0;
+}
+
+#name p:first-of-type {
+  margin-top: 0;
+}
+
+#control p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+h1,
+h3,
+label,
+p {
+  color: black;
+}
+
+input {
+  margin-left: 0px !important;
+}
+
+.ball {
+  width: var(--ball-diameter);
+  height: var(--ball-diameter);
+  border-radius: 50%;
+  background-color: #cb475b;
+  position: absolute;
+
+  /* Simplified Box Shadow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+
+  /* Linear Gradient for Light Effect */
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+h3 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 22px;
+  margin-bottom: 4px;
+  margin-top: var(--space-lg);
+}
+
+#control {
+  position: absolute;
+  margin: 8px;
+  padding: 4px 6px;
+  bottom: 0%;
+  right: 0%;
+  background-color: #d7ccb5;
+  border: 1px solid #938c7d;
+  width: 130px;
+  border-radius: 0px 0px 8px 0px;
+  font-size: 12px;
+  
+}
+
+.control-item {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #938c7d;
+  margin: 8px 0;
+}
+
+
+label {
+  display: block;
+}
+
+input[type="checkbox"] {
+  accent-color: black;
+}
+
+.projects-heading {
+  margin-top: var(--space-lg);
+}
+
+.contact {
+  margin-top: var(--space-lg);
+}
+
+#name ul {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+#name li {
+  margin-bottom: var(--space-sm);
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  margin-left: 0.15em;
+}
+
+#name a {
+  pointer-events: auto; /* Add this to allow link interaction */
+}
