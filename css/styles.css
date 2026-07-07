@@ -5,7 +5,7 @@
 :root {
   --white: #fdfcfd;
   --red: #c22f04;
-  --blue: #ad03f6;
+  --blue: #09f;
   --space-sm: 8px;
   --space-md: 16px;
   --space-lg: 32px;
@@ -16,8 +16,8 @@ body {
 }
 
 a {
-  color: var(--blue);
-  font-weight: bold;
+  color: var(--blue) !important; 
+  font-weight: medium;
   text-decoration: none;
 }
 
@@ -38,17 +38,22 @@ a {
 }
 
 #name h1 {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 10px;
-  font-family: "Nanum Myeongjo", serif;
+  /* font-family: "Nanum Myeongjo", serif; */
+  font-family: "Satoshi", serif;
+  font-weight: Bold;
+  /* font-stretch: semi-expanded; */
   margin-top: 10px;
 }
 
 #name p,
 #name li,
 a {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Satoshi", serif;
+  font-weight: Medium;
   font-size: 20px;
+  color: #797979;
 }
 
 body {
@@ -174,4 +179,18 @@ input[type="checkbox"] {
 
 #name a {
   pointer-events: auto; /* Add this to allow link interaction */
+}
+
+footer {
+    background-color: #fdfcfd;
+    color: black;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.footer-bottom p{
+    border-top: 0.1px solid #9e9d9d; /* Dark divider line */ 
+    padding-top: 10px;
+    font-size: 14px !important;
+    color: #9e9d9d;            /* Muted gray color */
 }
